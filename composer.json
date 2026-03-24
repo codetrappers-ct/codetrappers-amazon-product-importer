@@ -1,5 +1,5 @@
 {
-  "name": "coetrappers/coetrappers-amazon-product-importer",
+  "name": "codetrappers/codetrappers-amazon-product-importer",
   "description": "Starter plugin for importing Amazon-linked product metadata into WordPress.",
   "type": "wordpress-plugin",
   "license": "GPL-2.0-or-later",
@@ -8,7 +8,7 @@
   },
   "autoload": {
     "psr-4": {
-      "Coetrappers\\\\CoetrappersAmazonProductImporter\\\\": "includes/"
+      "Codetrappers\\\\CodetrappersAmazonProductImporter\\\\": "includes/"
     }
   }
 }

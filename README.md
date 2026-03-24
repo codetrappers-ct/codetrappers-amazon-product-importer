@@ -1,12 +1,12 @@
-# Coetrappers Amazon Product Importer
+# Codetrappers Amazon Product Importer
 
-`coetrappers-amazon-product-importer` is a wordpress plugin for the Coetrappers project set.
+`codetrappers-amazon-product-importer` is a wordpress plugin for the Codetrappers project set.
 Starter plugin for importing Amazon-linked product metadata into WordPress.
 The codebase is scaffolded to be a clean starting point, not a complete production feature.
 
 ## Project Summary
 
-- Slug: `coetrappers-amazon-product-importer`
+- Slug: `codetrappers-amazon-product-importer`
 - Type: WordPress plugin
 - Focus: amazon, affiliate, products
 
@@ -32,8 +32,8 @@ The codebase is scaffolded to be a clean starting point, not a complete producti
 
 ## How To Extend It
 
-- Activate `coetrappers-amazon-product-importer` from the Plugins screen.
-- Use `coetrappers-amazon-product-importer.php` as the primary bootstrap file for extension work.
+- Activate `codetrappers-amazon-product-importer` from the Plugins screen.
+- Use `codetrappers-amazon-product-importer.php` as the primary bootstrap file for extension work.
 - Keep feature logic inside dedicated classes rather than expanding the root file.
 
 ## Development Notes

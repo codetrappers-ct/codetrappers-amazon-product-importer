@@ -1,12 +1,12 @@
 <?php
-namespace Coetrappers\CoetrappersAmazonProductImporter;
+namespace Codetrappers\CodetrappersAmazonProductImporter;
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-class CoetrappersAmazonProductImporterPlugin {
-	const OPTION_KEY = 'coetrappers-amazon-product-importer_settings';
+class CodetrappersAmazonProductImporterPlugin {
+	const OPTION_KEY = 'codetrappers-amazon-product-importer_settings';
 
 	public function boot() {
 		add_action( 'init', array( $this, 'register_post_meta' ) );
@@ -17,7 +17,7 @@ class CoetrappersAmazonProductImporterPlugin {
 	public function register_post_meta() {
 		register_post_meta(
 			'',
-			'_coetrappers-amazon-product-importer_status',
+			'_codetrappers-amazon-product-importer_status',
 			array(
 				'show_in_rest'      => true,
 				'single'            => true,
@@ -63,7 +63,7 @@ class CoetrappersAmazonProductImporterPlugin {
 
 		$screen = function_exists( 'get_current_screen' ) ? get_current_screen() : null;
 
-		if ( ! $screen || 'settings_page_coetrappers-amazon-product-importer' === $screen->id ) {
+		if ( ! $screen || 'settings_page_codetrappers-amazon-product-importer' === $screen->id ) {
 			return;
 		}
 
@@ -75,7 +75,7 @@ class CoetrappersAmazonProductImporterPlugin {
 
 		printf(
 			'<div class="notice notice-info"><p>%s</p></div>',
-			esc_html__( 'Coetrappers Amazon Product Importer starter is active. Extend the bootstrap logic in includes/class-coetrappers-amazon-product-importer.php.', 'coetrappers-amazon-product-importer' )
+			esc_html__( 'Codetrappers Amazon Product Importer starter is active. Extend the bootstrap logic in includes/class-codetrappers-amazon-product-importer.php.', 'codetrappers-amazon-product-importer' )
 		);
 	}
 }
